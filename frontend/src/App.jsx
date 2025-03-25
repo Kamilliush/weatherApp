@@ -1,8 +1,16 @@
 import { useState, useEffect } from 'react';
+import CityToggle from './components/CityToggle';
+import CityWeather from './components/CityWeather';
+
+import './App.css';
 
 function App() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
+
+  const [isGliwice, setIsGliwice] = useState(true);
+  const handleSelectGliwice = () => setIsGliwice(true);
+  const handleSelectHamburg = () => setIsGliwice(false);
 
   useEffect(() => {
     fetch('/weather')
@@ -19,19 +27,14 @@ function App() {
     return <div>Loading...</div>;
   }
 
+  const cityName = isGliwice ? 'Gliwice' : 'Hamburg';
+  const cityData = isGliwice ? weather.gliwice : weather.hamburg;
+
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Weather App</h1>
-      <div style={{ marginBottom: '20px' }}>
-        <h2>Gliwice</h2>
-        <p>Temperature: {weather.gliwice.current.temp_c}°C</p>
-        <p>Conditions: {weather.gliwice.current.condition.text}</p>
-      </div>
-      <div>
-        <h2>Hamburg</h2>
-        <p>Temperature: {weather.hamburg.current.temp_c}°C</p>
-        <p>Conditions: {weather.hamburg.current.condition.text}</p>
-      </div>
+    <div className="container">
+      <CityToggle isGliwice={isGliwice} onSelectGliwice={handleSelectGliwice} onSelectHamburg={handleSelectHamburg} />
+
+      <CityWeather cityName={cityName} cityData={cityData} />
     </div>
   );
 }
