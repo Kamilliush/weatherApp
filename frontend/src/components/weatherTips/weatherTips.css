@@ -1,0 +1,28 @@
+.weatherTipsContainer {
+  background-color: #d9eafd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weatherTipsTitle {
+  margin: 0 0 16px 0;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.tipItemContainer {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tipItemText {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}

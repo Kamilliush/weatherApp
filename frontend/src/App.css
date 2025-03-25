@@ -10,13 +10,11 @@ body {
 
 .container {
   margin: 100px;
-  width: 90vw;
-  display: flex;
-  justify-content: space-between;
+  width: 65vw;
 }
 
 .leftCol {
-  width: 64%vw;
+  width: 64%;
 }
 
 .rightCol {
@@ -25,4 +23,9 @@ body {
 .forecast {
   display: flex;
   justify-content: left;
+}
+
+.cityWeather {
+  display: flex;
+  justify-content: space-between;
 }
