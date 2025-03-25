@@ -1,14 +1,13 @@
-// src/components/CityToggle.jsx
 import React from 'react';
 import './CityToggle.css';
 
 function CityToggle({ isGliwice, onSelectGliwice, onSelectHamburg }) {
   return (
-    <div className="city-toggle-container">
-      <button className={`city-toggle-button ${isGliwice ? 'active' : ''}`} onClick={onSelectGliwice}>
+    <div className="cityToggleContainer">
+      <button className={`cityToggleButton ${isGliwice ? 'active' : ''}`} onClick={onSelectGliwice}>
         Gliwice
       </button>
-      <button className={`city-toggle-button ${!isGliwice ? 'active' : ''}`} onClick={onSelectHamburg}>
+      <button className={`cityToggleButton ${!isGliwice ? 'active' : ''}`} onClick={onSelectHamburg}>
         Hamburg
       </button>
     </div>

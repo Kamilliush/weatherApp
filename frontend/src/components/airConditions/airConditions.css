@@ -1,0 +1,59 @@
+.airConditionsContainer {
+  background-color: #d9eafd;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.airConditionsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.airConditionsGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conditionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  margin: 8px;
+}
+
+.conditionIcon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.conditionInfo {
+  text-align: center;
+}
+
+.conditionLabel {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.conditionValue {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.airConditionsTitle {
+  margin: 0 0 16px 0;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}

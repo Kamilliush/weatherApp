@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import CityToggle from './components/CityToggle';
 import CityWeather from './components/CityWeather';
+import ForecastContainer from './components/tempForecast/ForecastContainer';
+import AirConditionsContainer from './components/airConditions/AirConditionContainer';
 
 import './App.css';
 
@@ -30,11 +32,20 @@ function App() {
   const cityName = isGliwice ? 'Gliwice' : 'Hamburg';
   const cityData = isGliwice ? weather.gliwice : weather.hamburg;
 
+  const realFeel = Math.round(cityData.current.feelslike_c);
+  const wind = Math.round(cityData.current.wind_kph);
+  const uv = Math.round(cityData.current.uv);
+
   return (
     <div className="container">
-      <CityToggle isGliwice={isGliwice} onSelectGliwice={handleSelectGliwice} onSelectHamburg={handleSelectHamburg} />
+      <div className="leftCol">
+        <CityToggle isGliwice={isGliwice} onSelectGliwice={handleSelectGliwice} onSelectHamburg={handleSelectHamburg} />
+        <CityWeather cityData={cityData} />
+        <ForecastContainer city={cityName} />
+        <AirConditionsContainer realFeel={realFeel} wind={wind} uv={uv} />
+      </div>
 
-      <CityWeather cityName={cityName} cityData={cityData} />
+      <div className="rightCol"></div>
     </div>
   );
 }

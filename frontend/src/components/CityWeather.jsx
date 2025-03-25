@@ -1,11 +1,10 @@
 import React from 'react';
+import './CityWeather.css';
 
-function CityWeather({ cityName, cityData }) {
+function CityWeather({ cityData }) {
   return (
     <div>
-      <h2>{cityName}</h2>
-      <p>Temperature: {cityData.current.temp_c}°C</p>
-      <p>Conditions: {cityData.current.condition.text}</p>
+      <p className="titleTemp">{Math.round(cityData.current.temp_c)}°C</p>
     </div>
   );
 }

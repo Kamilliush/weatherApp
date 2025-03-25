@@ -1,13 +1,12 @@
-.city-toggle-container {
+.cityToggleContainer {
   display: flex;
   gap: 16px;
 }
 
-.city-toggle-button {
+.cityToggleButton {
   background: none;
   border: none;
   font-size: 2.5rem;
-  /* Ustal stałą szerokość – dzięki temu przycisk nie „skacze”, gdy font-weight się zmienia */
   width: 150px;
   text-align: center;
   color: #bfc8d1;
@@ -15,11 +14,11 @@
   transition: color 0.2s, font-weight 0.2s;
 }
 
-.city-toggle-button:hover {
+.cityToggleButton:hover {
   color: #b2bbc3;
 }
 
-.city-toggle-button.active {
+.cityToggleButton.active {
   font-weight: bold;
   color: #000;
 }

@@ -1,0 +1,48 @@
+.forecastContainer {
+  background-color: #d9eafd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecastTitle {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.hoursContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hourCard {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 90px;
+  padding: 10px;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hourTime {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.hourIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.hourTemp {
+  font-size: 1.2rem;
+  color: #555;
+}
