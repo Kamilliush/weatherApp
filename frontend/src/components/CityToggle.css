@@ -9,16 +9,16 @@
   font-size: 2.5rem;
   width: 150px;
   text-align: center;
-  color: #bfc8d1;
+  color: #54595d;
   cursor: pointer;
   transition: color 0.2s, font-weight 0.2s;
 }
 
 .cityToggleButton:hover {
-  color: #b2bbc3;
+  color: #b0b0b0;
 }
 
 .cityToggleButton.active {
   font-weight: bold;
-  color: #000;
+  color: #b0b0b0;
 }
