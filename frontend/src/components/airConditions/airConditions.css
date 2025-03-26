@@ -15,9 +15,11 @@
 
 .airConditionsGrid {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 8px;
+  padding-bottom: 10px;
 }
 
 .conditionItem {
@@ -56,8 +58,23 @@
   width: 100%;
 }
 
+@media (max-width: 540px) {
+  .conditionValue {
+    font-size: 0.8rem;
+  }
+  .conditionLabel {
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 1199px) {
   .airConditionsContainer {
     margin: 0;
+    padding: 10px;
+  }
+
+  .airConditionsGrid {
+    display: flex;
+    justify-content: center;
   }
 }

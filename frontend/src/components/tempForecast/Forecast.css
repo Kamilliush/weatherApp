@@ -16,9 +16,11 @@
 
 .hoursContainer {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 8px;
+  padding-bottom: 10px;
 }
 
 .hourCard {

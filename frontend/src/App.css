@@ -29,14 +29,24 @@ body {
   justify-content: space-between;
 }
 
+.footer {
+  display: flex;
+  width: 100%;
+}
+
 @media (max-width: 1199px) {
   .cityWeather {
     flex-direction: column;
     text-align: center;
   }
 }
-
-.footer {
-  display: flex;
-  width: 100%;
+@media (max-width: 840px) {
+  .footer {
+    flex-direction: column;
+  }
+  .container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
 }

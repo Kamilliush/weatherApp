@@ -39,3 +39,28 @@
   font-size: 0.95rem;
   text-align: center;
 }
+
+@media (max-width: 1199px) {
+  .sunTimesContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .sunTimeItem {
+    width: 100%;
+  }
+}
+
+@media (max-width: 840px) {
+  .sunTimesContainer {
+    flex-direction: row;
+
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+  .sunTimeItem {
+    padding: 10;
+    margin: 10px;
+    width: 100%;
+  }
+}
