@@ -5,6 +5,7 @@ import ForecastContainer from './components/tempForecast/ForecastContainer';
 import AirConditionsContainer from './components/airConditions/AirConditionContainer';
 import WeatherTipsContainer from './components/weatherTips/WeatherTipsContainer';
 import SunTimesContainer from './components/sunTimes/SunTimesContainer';
+import NextDaysContainer from './components/nextDays/NextDaysContainer';
 
 import './App.css';
 
@@ -49,6 +50,7 @@ function App() {
         </div>
       </div>
       <ForecastContainer city={cityName} />
+      <NextDaysContainer city={cityName} />
       <div className="footer">
         <WeatherTipsContainer cityData={cityData} />
         <SunTimesContainer cityData={cityData} />

@@ -32,10 +32,10 @@ const SunTimesContainer = ({ cityData }) => {
   }, [cityName]);
 
   if (error) {
-    return <div className="sunTimesContainer">Błąd: {error}</div>;
+    return <div className="sunTimesContainer">Error: {error}</div>;
   }
   if (!astroData) {
-    return <div className="sunTimesContainer">Ładowanie danych o wschodzie i zachodzie słońca...</div>;
+    return <div className="sunTimesContainer">Loading...</div>;
   }
 
   return (

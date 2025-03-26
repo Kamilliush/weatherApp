@@ -1,4 +1,4 @@
-.forecastContainer {
+.nextDaysContainer {
   background-color: #4c90d3;
   padding: 20px;
   color: #fdfcdc;
@@ -7,14 +7,24 @@
   margin: 25px 0;
 }
 
-.forecastTitle {
+.nextDaysTitle {
   margin-bottom: 16px;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
 
-.hoursContainer {
+.dayIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+.nextDaysGrid {
   justify-content: center;
   display: flex;
   flex-wrap: nowrap;
@@ -24,7 +34,7 @@
   padding-bottom: 10px;
 }
 
-.hourCard {
+.singleDay {
   border-radius: 8px;
   width: 90px;
   padding: 10px;
@@ -38,22 +48,6 @@
   transform-origin: center;
 }
 
-.hourCard:hover {
+.singleDay:hover {
   transform: scale(1.07);
-}
-
-.hourTime {
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.hourIcon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 8px;
-}
-
-.hourTemp {
-  font-size: 1.2rem;
-  color: #fdfcdc;
 }
