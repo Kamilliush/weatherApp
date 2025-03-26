@@ -9,7 +9,6 @@ const SunTimesContainer = ({ cityData }) => {
   const [error, setError] = useState(null);
   const apiKey = 'dd1b622140154b2a98d152731251703';
 
-  // Pobieramy nazwę miasta z przekazanych danych (np. "Gliwice" lub "Hamburg")
   const cityName = cityData?.location?.name;
 
   useEffect(() => {
@@ -20,7 +19,6 @@ const SunTimesContainer = ({ cityData }) => {
           throw new Error('Błąd połączenia z WeatherAPI');
         }
         const data = await response.json();
-        // Dane astronomiczne znajdują się w forecast.forecastday[0].astro
         const astro = data.forecast?.forecastday?.[0]?.astro;
         setAstroData(astro);
       } catch (err) {

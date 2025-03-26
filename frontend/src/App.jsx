@@ -4,7 +4,7 @@ import CityWeather from './components/CityWeather';
 import ForecastContainer from './components/tempForecast/ForecastContainer';
 import AirConditionsContainer from './components/airConditions/AirConditionContainer';
 import WeatherTipsContainer from './components/weatherTips/WeatherTipsContainer';
-import SunTimesContainer from './components/sunTimes/SunTimesContainer'; // Import nowego komponentu
+import SunTimesContainer from './components/sunTimes/SunTimesContainer';
 
 import './App.css';
 
