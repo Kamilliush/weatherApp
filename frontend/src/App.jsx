@@ -1,10 +1,10 @@
-// src/App.jsx
 import { useState, useEffect } from 'react';
 import CityToggle from './components/CityToggle';
 import CityWeather from './components/CityWeather';
 import ForecastContainer from './components/tempForecast/ForecastContainer';
 import AirConditionsContainer from './components/airConditions/AirConditionContainer';
-import WeatherTipsContainer from './components/weatherTips/WeatherTipsContainer'; // Import komponentu porad
+import WeatherTipsContainer from './components/weatherTips/WeatherTipsContainer';
+import SunTimesContainer from './components/sunTimes/SunTimesContainer'; // Import nowego komponentu
 
 import './App.css';
 
@@ -45,12 +45,14 @@ function App() {
           <CityWeather cityData={cityData} />
         </div>
         <div>
-          <WeatherTipsContainer cityData={cityData} />
+          <AirConditionsContainer realFeel={realFeel} wind={wind} uv={uv} />
         </div>
       </div>
-
       <ForecastContainer city={cityName} />
-      <AirConditionsContainer realFeel={realFeel} wind={wind} uv={uv} />
+      <div className="footer">
+        <WeatherTipsContainer cityData={cityData} />
+        <SunTimesContainer cityData={cityData} />
+      </div>
     </div>
   );
 }

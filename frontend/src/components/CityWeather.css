@@ -1,3 +1,14 @@
+.cityToggleContainer {
+  margin-bottom: 30px;
+}
+
 .titleTemp {
   font-size: 3rem;
+  margin-left: 150px;
+}
+
+@media (max-width: 1199px) {
+  .titleTemp {
+    margin-left: 0;
+  }
 }

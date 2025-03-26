@@ -10,6 +10,7 @@
   width: 150px;
   text-align: center;
   color: #54595d;
+
   cursor: pointer;
   transition: color 0.2s, font-weight 0.2s;
 }
@@ -20,5 +21,11 @@
 
 .cityToggleButton.active {
   font-weight: bold;
-  color: #b0b0b0;
+  color: #fdfcdc;
+}
+
+@media (max-width: 1199px) {
+  .cityToggleButton {
+    font-size: 2rem;
+  }
 }

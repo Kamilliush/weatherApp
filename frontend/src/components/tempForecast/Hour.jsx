@@ -10,7 +10,7 @@ export default function Hour({ hourData }) {
     <div className="hourCard">
       <div className="hourTime">{timeOnly}</div>
       <img src={condition.icon} alt={condition.text} className="hourIcon" />
-      <div className="hourTemp">{temp_c}°C</div>
+      <div className="hourTemp">{Math.round(temp_c)}°C</div>
     </div>
   );
 }

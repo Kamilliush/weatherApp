@@ -1,21 +1,26 @@
-.weatherTipsContainer {
+.sunTimesContainer {
   background-color: #4c90d3;
+  display: flex;
   width: 50%;
+  margin-left: 25px;
   color: #fdfcdc;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 50px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
 }
 
-.weatherTipsTitle {
+.sunTimesTitle {
   margin: 0 0 16px 0;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
 
-.tipItemContainer {
+.sunTimeItem {
+  width: 40%;
   padding: 10px;
   margin-bottom: 8px;
   border-radius: 8px;
@@ -25,11 +30,12 @@
   transform-origin: center;
 }
 
-.tipItemContainer:hover {
+.sunTimeItem:hover {
   transform: scale(1.03);
 }
 
-.tipItemText {
+.sunTimeItemText {
   margin: 0;
   font-size: 0.95rem;
+  text-align: center;
 }
